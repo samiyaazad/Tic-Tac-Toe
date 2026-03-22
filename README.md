@@ -31,9 +31,4 @@ A simple Tic Tac Toe game built using HTML, CSS, and JavaScript.
 
 ##  Preview
 
-
-
-
-## 💡 Author
-
-Made with ❤️ while learning JavaScript game development.
+![Tic Tac Toe Game](Preview.PNG)
