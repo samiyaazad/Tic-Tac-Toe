@@ -1,0 +1,70 @@
+body {
+    background: url("./background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+    height: 2px;
+    background-color: skyblue;
+    border: 0;
+}
+
+#game-board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+
+    background-color: skyblue;
+    color: white;
+    border: 6px solid lightblue;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+}
+
+.game-cell {
+    border: 6px solid lightblue;
+    border-radius: 2px;
+    font-size: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winning-game-cell {
+    background-color: white;
+    color: skyblue;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px white;
+
+}
+
+#game-restart-button {
+    height: 50px;
+    width: 150px;
+    border: 5px solid lightblue;
+    background-color: skyblue;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@keyframes winPulse {
+    0% { transform: scale(1); }
+    50% { tranform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.winning-game-cell {
+    background-color: white;
+    color: skyblue;
+    animation: winPlus 0.6s infinite;
+}
+
